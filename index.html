@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>where to put your speaker</title>
+</head>
+<body>
+    <h1>where to put your speaker</h1>
+
+    <form>
+        room name: <input type="text" id="roomName">
+        <br><br>
+
+        length (m): <input type="number" id="roomLength" step="0.1">
+        <br><br>
+
+        width (m): <input type="number" id="roomWidth" step="0.1">
+        <br><br>
+
+        height (m): <input type="number" id="roomHeight" step="0.1">
+        <br><br>
+
+        floor:
+        <select id="floorMaterial">
+            <option value="hardwood">hardwood</option>
+            <option value="tile">tile</option>
+            <option value="carpet thin">thin carpet</option>
+            <option value="carpet thick">thick carpet</option>
+            <option value="concrete">concrete</option>
+        </select>
+        <br><br>
+
+        walls:
+        <select id="wallMaterial">
+            <option value="drywall">drywall</option>
+            <option value="bricks">bricks</option>
+            <option value="glass">glass</option>
+            <option value="concrete">concrete</option>
+        </select>
+        <br><br>
+
+        ceiling:
+        <select id="ceilingMaterial">
+            <option value="drywall">drywall</option>
+            <option value="acoustic tile">acoustic tile</option>
+            <option value="concrete">concrete</option>
+        </select>
+        <br><br>
+
+        where you sit (measured from the top left corner):
+        <br>
+        along the length: <input type="number" id="listeningX" step="0.1">
+        along the width: <input type="number" id="listeningY" step="0.1">
+        <br><br>
+
+        stuff in the way (doors, furniture):
+        <div id="obstacleList"></div>
+        <button type="button" id="addObstacleBtn">+ add something</button>
+        <br><br>
+
+        <button type="button" id="calculateBtn">go</button>
+    </form>
+
+    <div id="result"></div>
+    <div id="roomDiagram" style="position: fixed; top: 20px; right: 20px;"></div>
+    <div id="topSpots"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
