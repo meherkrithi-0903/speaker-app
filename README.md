@@ -4,7 +4,8 @@ a small web page that tells you where to put a speaker in your room.
 you type in your room size, what the floor, walls and ceiling are made of, where you sit, and anything that's in the way (doors, furniture). it draws your room from above, shows how echoey it is in plain words, and marks the best spot for the speaker.
 ![Uploading Screenshot 2026-11-05 at 10.19.56 AM.png…]()
 
-live version: 
+live version: [https://meherkrithi-0903.github.io/speaker-app/] 
+
 
 ## how to run it
 you need node installed. then, inside this folder:
